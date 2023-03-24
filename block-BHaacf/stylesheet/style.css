@@ -1,0 +1,373 @@
+/*Variable */
+
+:root{
+    --primary:rgb(237,86,58);
+    --text:rgb(152,152,152);
+
+
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+ caption, 
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+/*My RESEtes */
+ a {
+    text-decoration: none;
+    color: white;
+ }
+ p{
+    font-size: 12px;
+    color: var(--text);
+ }
+
+ /*Custom Styles */
+
+ .container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 25px;
+    width: 100%;
+ }
+ .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+ .nav-menu a{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: white;
+    font-weight: 500;
+ }
+
+ .nav-menu li{
+    margin-left: 46px;
+ }
+ .nav-menu a:hover{
+    color: var(--primary);
+ }
+.active a{
+    color: var(--primary);
+}
+ .nav-menu :nth-child(6) :first-child{
+    color:  red;
+    background-color: var(--primary);
+    padding: 8px;
+    color: white;
+ }
+ .navbar{
+    padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(99, 92, 92,0.4);
+   
+ }
+ .logo {
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: 600;
+ }
+strong{
+    color: var(--primary);
+}
+
+/*hero-section */
+
+.hero{
+    position: relative;
+    
+   
+    
+    
+
+   
+}
+
+
+.bg-video{
+    width: 100%;
+    max-height: 100vh;
+    object-fit: cover;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(rgba(23, 20, 20, 0.7),rgba(23, 17, 17, 0.7));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.overlay h5{
+    color: white;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+.overlay h2{
+    font-size: 45px;
+    padding: 15px 0;
+
+}
+
+
+
+.center{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.padding{
+    padding: 45px 0;
+}
+.about{
+    text-align: center;
+    padding: 40px 0;
+}
+.about img{
+    padding: 20px 0;
+}
+.para{
+   
+    font-size: 12px;
+    color: var(--text);
+    padding: 0 368px;
+}
+.wrap{
+    flex-wrap: wrap;
+}
+h3{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+}
+
+
+
+.activities{
+    width: 45%;
+    margin-top: 30px;
+}
+.activities img{
+    width: 18%;
+}
+.activities div{
+    padding: 0 15px;
+}
+h4{
+    font-size: 18px;
+}
+.activities p{
+    padding: 4px 0;
+}
+.activities a{
+    color: var(--primary);
+}
+.moto{
+    background: url(../assets/cta-bg.jpg) center center no-repeat;
+    padding: 100px 0;
+    background-size: cover;
+    text-align: center;
+}
+.moto p{
+    font-size: 16px;
+    padding: 12px 194px;
+    color: white;
+}
+   .btn{
+    padding: 8px 12px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    background-color: var(--primary);
+    border: 0;
+    display: block;
+  margin: 0 auto;
+   }
+
+   .flex-20{
+    flex: 1 0 20%;
+
+   }
+   .flex-70{
+    flex: 1 0 70%;
+    padding: 0 30px;
+   }
+   .training div{
+    padding: 12px 35px;
+   
+    font-size: 15px;
+    margin-top: 15px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+   }
+   .training .btn{
+    width: 100%;
+    margin-top: 10px;
+
+   }
+   .coaches{
+   
+    padding: 0 18px;
+   }
+   .coaches img{
+    width: 100%;
+    height: 205px;
+   }
+   h5{
+    color: #232D38;
+    font-weight: 600;
+    font-size: 12px;
+   }
+   .coaches .btn{
+    margin: 0;
+    margin-top: 5px;
+   }
+   .coaches h5{
+    margin: 5px 0;
+   }
+   .schedule{
+    background: url(../assets/schedule-bg.jpg) center center no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+  
+    
+
+   }
+
+   table{
+    width: 900px;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-collapse: collapse;
+    text-align: center;
+    color: white;
+
+   }
+   caption{
+    margin: 25px 0;
+   }
+   td{
+    border: 1px solid white;
+    padding: 24px;
+   }
+  .people{
+    width: 28%;
+    padding: 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+
+  }
+  .people img{
+    width: 100%;
+  }
+  .media {
+    display: flex;
+  }
+   .people p{
+    padding:10px 0
+    
+   }
+   .people small{
+    color: var(--primary);
+    font-size: 13px;
+   }
+   .contact{
+    display: flex;
+   }
+   .deatils{
+    width: 50%;
+   
+    background: url(../assets/contact-bg.jpg) center center no-repeat;
+    background-size: cover;
+   }
+   form{
+    margin: 59px;
+    padding: 24px;
+    
+    background-color: white;
+   }
+   .control{
+    width: 43%;
+    padding: 8px 16px;
+    border: 1px solid rgb(231, 229, 229);
+   
+   }
+   .sub{
+    width: 94%;
+    padding: 8px 15px;
+    margin-top: 23px;
+    border: 1px solid rgb(231, 229, 229);
+    
+   }
+   .deatils .btn{
+    margin: 0;
+   }
+   .bottom{
+    background-color: white;
+    padding: 35px 0;
+    text-align: center;
+    font-size: 14px;
+    
+   }
+   .bottom a{
+    color: var(--primary);
+   }
+   
+   
+    
+    
+
+    
